@@ -1,9 +1,4 @@
-# JPA Tutorial
+# Prototype Design Pattern
+Prototype Pattern says that cloning of an existing object instead of creating new one and can also be customized as per the requirement.
 
-  - ## [JPA Overview](1_JPA_Intro/README.md)
-
-  - ## [JPA Entity](2_Entity/README.md)
-
-  - ## [JPA Mappinh](3_Mapping/README.md)
-
-  - ## [JPA Cascade type](4_Cascade/README.md)
+This pattern should be followed, if the cost of creating a new object is expensive and resource intensive.
