@@ -1,9 +1,6 @@
-# JPA Tutorial
+# Abstract Factory Pattern
+Abstract Factory Pattern says that just define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes.That means Abstract Factory lets a class returns a factory of classes. So, this is the reason that Abstract Factory Pattern is one level higher than the Factory Pattern.
 
-  - ## [JPA Overview](1_JPA_Intro/README.md)
+An Abstract Factory Pattern is also known as Kit.
 
-  - ## [JPA Entity](2_Entity/README.md)
-
-  - ## [JPA Mappinh](3_Mapping/README.md)
-
-  - ## [JPA Cascade type](4_Cascade/README.md)
+## Example of Abstract Factory Pattern
