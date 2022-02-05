@@ -1,9 +1,11 @@
-# JPA Tutorial
+# Object Pool Pattern
+Mostly, performance is the key issue during the software development and the object creation, which may be a costly step.
 
-  - ## [JPA Overview](1_JPA_Intro/README.md)
+Object Pool Pattern says that " to reuse the object that are expensive to create".
 
-  - ## [JPA Entity](2_Entity/README.md)
+Basically, an Object pool is a container which contains a specified amount of objects. When an object is taken from the pool, it is not available in the pool until it is put back. Objects in the pool have a lifecycle: creation, validation and destroy.
 
-  - ## [JPA Mappinh](3_Mapping/README.md)
+A pool helps to manage available resources in a better way. There are many using examples: especially in application servers there are data source pools, thread pools etc.
 
-  - ## [JPA Cascade type](4_Cascade/README.md)
+### NOTE:
+Object pool design pattern is essentially used in Web Container of the server for creating thread pools and data source pools to process the requests.
