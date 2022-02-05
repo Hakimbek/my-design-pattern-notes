@@ -156,11 +156,11 @@ Create a Meal class having Item objects defined above.
 public class Meal {
    private List<Item> items = new ArrayList<Item>();	
 
-   public void addItem(Item item){
+   public void addItem(Item item) {
       items.add(item);
    }
 
-   public float getCost(){
+   public float getCost() {
       float cost = 0.0f;
       
       for (Item item : items) {
@@ -169,7 +169,7 @@ public class Meal {
       return cost;
    }
 
-   public void showItems(){
+   public void showItems() {
    
       for (Item item : items) {
          System.out.print("Item : " + item.name());
@@ -187,14 +187,14 @@ Create a MealBuilder class, the actual builder class responsible to create Meal 
 ```java
 public class MealBuilder {
 
-   public Meal prepareVegMeal (){
+   public Meal prepareVegMeal () {
       Meal meal = new Meal();
       meal.addItem(new VegBurger());
       meal.addItem(new Coke());
       return meal;
    }   
 
-   public Meal prepareNonVegMeal (){
+   public Meal prepareNonVegMeal () {
       Meal meal = new Meal();
       meal.addItem(new ChickenBurger());
       meal.addItem(new Pepsi());
