@@ -50,7 +50,7 @@ public class Bottle implements Packing {
 }
 ```
 
-### Step 3
+## Step 3
 Create abstract classes implementing the item interface providing default functionalities.
 
 ### Burger.java
@@ -81,7 +81,7 @@ public abstract class ColdDrink implements Item {
 }
 ```
 
-### Step 4
+## Step 4
 Create concrete classes extending Burger and ColdDrink classes
 
 ### VegBurger.java
@@ -148,7 +148,7 @@ public class Pepsi extends ColdDrink {
 }
 ```
 
-### Step 5
+## Step 5
 Create a Meal class having Item objects defined above.
 
 ### Meal.java
@@ -183,7 +183,7 @@ public class Meal {
 }
 ```
 
-### Step 6
+## Step 6
 Create a MealBuilder class, the actual builder class responsible to create Meal objects.
 
 ### MealBuilder.java
@@ -206,7 +206,7 @@ public class MealBuilder {
 }
 ```
 
-### Step 7
+## Step 7
 BuiderPatternDemo uses MealBuider to demonstrate builder pattern.
 
 ### BuilderPatternDemo.java
