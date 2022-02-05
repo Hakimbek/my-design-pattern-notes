@@ -6,7 +6,7 @@ It is mostly used when object can't be created in single step like in the de-ser
 
 ## Example of Builder Design Pattern
 
-### Step 1
+## Step 1
 Create an interface Item representing food item and packing.
 
 ### Item.java
@@ -25,7 +25,7 @@ public interface Packing {
 }
 ```
 
-### Step 2
+## Step 2
 Create concrete classes implementing the Packing interface.
 
 ### Wrapper.java
