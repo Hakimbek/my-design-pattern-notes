@@ -5,3 +5,4 @@
  - [Singleton](Creational/Singleton/README.md)
  - [Prototype](Creational/Prototype/README.md)
  - [Builder](Creational/Builder/README.md)
+## Structural Pattern
