@@ -6,3 +6,4 @@
  - [Prototype](Creational/Prototype/README.md)
  - [Builder](Creational/Builder/README.md)
 ## Structural Pattern
+ - [Adapter](Strtuctural/Adapter/README.md)
