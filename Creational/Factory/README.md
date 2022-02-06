@@ -16,8 +16,7 @@ public interface Shape {
 ```
 
 
-## Step 2
-Create concrete classes implementing the same interface.
+## Step 2: Create concrete classes implementing the same interface.
 
 ### Rectangle.java
 
