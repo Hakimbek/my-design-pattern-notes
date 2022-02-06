@@ -14,7 +14,7 @@ Basically, design patterns are categorized into two parts:
 ## Core Java Design Patterns
 In core java, there are mainly three types of design patterns, which are further divided into their sub-parts:
 
-### 1.Creational Design Pattern
+### 1. Creational Design Pattern
 - [Factory Method](Creational/Factory)
 - [Abstract Factory](Creational/Abstract_Factory)
 - Singleton Pattern
