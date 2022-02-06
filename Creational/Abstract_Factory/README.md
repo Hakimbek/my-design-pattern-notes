@@ -68,7 +68,7 @@ public class Square implements Shape {
 
 ```java
 public abstract class AbstractFactory {
-   abstract Shape getShape(String shapeType) ;
+   abstract Shape getShape(String shapeType);
 }
 ```
 
@@ -79,12 +79,13 @@ public abstract class AbstractFactory {
 ```java
 public class ShapeFactory extends AbstractFactory {
    @Override
-   public Shape getShape(String shapeType){    
-      if(shapeType.equalsIgnoreCase("RECTANGLE")){
+   public Shape getShape(String shapeType) {    
+      if (shapeType.equalsIgnoreCase("RECTANGLE")) {
          return new Rectangle();         
-      }else if(shapeType.equalsIgnoreCase("SQUARE")){
+      }else if (shapeType.equalsIgnoreCase("SQUARE")) {
          return new Square();
       }	 
+      
       return null;
    }
 }
@@ -95,12 +96,13 @@ public class ShapeFactory extends AbstractFactory {
 ```java
 public class RoundedShapeFactory extends AbstractFactory {
    @Override
-   public Shape getShape(String shapeType){    
-      if(shapeType.equalsIgnoreCase("RECTANGLE")){
+   public Shape getShape(String shapeType) {    
+      if (shapeType.equalsIgnoreCase("RECTANGLE")) {
          return new RoundedRectangle();         
-      }else if(shapeType.equalsIgnoreCase("SQUARE")){
+      }else if (shapeType.equalsIgnoreCase("SQUARE")) {
          return new RoundedSquare();
       }	 
+      
       return null;
    }
 }
