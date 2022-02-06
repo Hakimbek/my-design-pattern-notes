@@ -1,12 +1,11 @@
 # Abstract Factory Pattern
 Abstract Factory Pattern says that just define an interface or abstract class for creating families of related (or dependent) objects but without specifying their concrete sub-classes.That means Abstract Factory lets a class returns a factory of classes. So, this is the reason that Abstract Factory Pattern is one level higher than the Factory Pattern.
 
-An Abstract Factory Pattern is also known as Kit.
+An Abstract Factory Pattern is also known as **Kit**.
 
 ## Example of Abstract Factory Pattern
 
-## Step 1
-Create an interface for Shapes.
+## Step 1: Create an interface for Shapes.
 
 ### Shape.java
 
@@ -17,8 +16,7 @@ public interface Shape {
 ```
 
 
-## Step 2
-Create concrete classes implementing the same interface.
+## Step 2: Create concrete classes implementing the same interface.
 
 ### RoundedRectangle.java
 
@@ -64,8 +62,7 @@ public class Square implements Shape {
 }
 ```
 
-## Step 3
-Create an Abstract class to get factories for Normal and Rounded Shape Objects.
+## Step 3: Create an Abstract class to get factories for Normal and Rounded Shape Objects.
 
 ### AbstractFactory.java
 
@@ -75,8 +72,7 @@ public abstract class AbstractFactory {
 }
 ```
 
-## Step 4
-Create Factory classes extending AbstractFactory to generate object of concrete class based on given information.
+## Step 4: Create Factory classes extending AbstractFactory to generate object of concrete class based on given information.
 
 ### ShapeFactory.java
 
@@ -110,8 +106,7 @@ public class RoundedShapeFactory extends AbstractFactory {
 }
 ```
 
-## Step 5
-Create a Factory generator/producer class to get factories by passing an information such as Shape
+## Step 5: Create a Factory generator/producer class to get factories by passing an information such as Shape
 
 ### FactoryProducer.java
 
@@ -127,8 +122,7 @@ public class FactoryProducer {
 }
 ```
 
-## Step 6
-Use the FactoryProducer to get AbstractFactory in order to get factories of concrete classes by passing an information such as type.
+## Step 6: Use the FactoryProducer to get AbstractFactory in order to get factories of concrete classes by passing an information such as type.
 
 ### AbstractFactoryPatternDemo.java
 
