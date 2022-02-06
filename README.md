@@ -17,17 +17,17 @@ In core java, there are mainly three types of design patterns, which are further
 ### 1. Creational Design Pattern
 - [Factory Method](Creational/Factory)
 - [Abstract Factory](Creational/Abstract_Factory)
-- Singleton Pattern
-- Prototype Pattern
-- Builder Pattern.
+- [Singleton](Creational/Singleton/README.md)
+- [Prototype](Creational/Prototype/README.md)
+- [Builder](Creational/Builder/README.md)
 ### 2. Structural Design Pattern
-- Adapter Pattern
-- Bridge Pattern
-- Composite Pattern
-- Decorator Pattern
-- Facade Pattern
-- Flyweight Pattern
-- Proxy Pattern
+- [Adapter](Structural/Adapter/README.md)
+- [Bridge](Structural/Bridge/README.md)
+- [Composite](Structural/Composite/README.md)
+- [Decorator](Structural/Decorator/README.md)
+- [Facade](Structural/Facade/README.md)
+- [Flyweight](Structural/Fly_Weight/README.md)
+- [Proxy](Structural/Proxy/README.md)
 ### 3. Behavioral Design Pattern
 - Chain Of Responsibility Pattern
 - Command Pattern
@@ -40,17 +40,4 @@ In core java, there are mainly three types of design patterns, which are further
 - Strategy Pattern
 - Template Pattern
 - Visitor Pattern
-
-
-## Creational Pattern
- - [Singleton](Creational/Singleton/README.md)
- - [Prototype](Creational/Prototype/README.md)
- - [Builder](Creational/Builder/README.md)
-## Structural Pattern
- - [Adapter](Structural/Adapter/README.md)
- - [Bridge](Structural/Bridge/README.md)
- - [Composite](Structural/Composite/README.md)
- - [Decorator](Structural/Decorator/README.md)
- - [Facade](Structural/Facade/README.md)
- - [Flyweight](Structural/Fly_Weight/README.md)
- - [Proxy](Structural/Proxy/README.md)
+ 
