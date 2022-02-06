@@ -75,7 +75,7 @@ public abstract class ColdDrink implements Item {
 public class VegBurger extends Burger {
    @Override
    public double price() {
-      return 25.0;
+      return 50.25;
    }
 
    @Override
@@ -90,7 +90,7 @@ public class VegBurger extends Burger {
 public class ChickenBurger extends Burger {
    @Override
    public double price() {
-      return 50.5;
+      return 75.50;
    }
 
    @Override
@@ -105,7 +105,7 @@ public class ChickenBurger extends Burger {
 public class Coke extends ColdDrink {
    @Override
    public double price() {
-      return 30.0;
+      return 15.25;
    }
 
    @Override
@@ -120,7 +120,7 @@ public class Coke extends ColdDrink {
 public class Pepsi extends ColdDrink {
    @Override
    public double price() {
-      return 35.0;
+      return 10.50;
    }
 
    @Override
