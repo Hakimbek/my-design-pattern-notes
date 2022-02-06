@@ -116,7 +116,7 @@ public class FactoryPatternDemo {
 ### Output:
 
 ```
-Inside Circle::draw() method.
-Inside Rectangle::draw() method.
-Inside Square::draw() method.
+Circle
+Rectangle
+Square
 ```
