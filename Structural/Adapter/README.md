@@ -3,7 +3,7 @@ An Adapter Pattern says that just "converts the interface of a class into anothe
 
 In other words, to provide the interface according to client requirement while using the services of a class with a different interface.
 
-The Adapter Pattern is also known as Wrapper.
+The Adapter Pattern is also known as **Wrapper**.
 
 ## Example of Adapter Pattern
 
