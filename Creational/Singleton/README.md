@@ -7,7 +7,7 @@ In other words, a class must ensure that only single instance should be created 
 
 ## Step 1: Create a Singleton Class.
 
-## SingleObject.java
+### SingleObject.java
 
 ```java
 public class SingletonObject {
