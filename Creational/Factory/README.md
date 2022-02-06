@@ -88,7 +88,7 @@ public class ShapeFactory {
 ### Main.java
 
 ```java
-public class FactoryPatternDemo {
+public class Main {
    public static void main(String[] args) {
       ShapeFactory shapeFactory = new ShapeFactory();
 
