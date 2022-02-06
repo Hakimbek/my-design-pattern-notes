@@ -13,73 +13,69 @@ interface Prototype {
 }
 ```
 
-### EmployeeRecord.java
+### Employee.java
 
 ```java
-class EmployeeRecord implements Prototype {  
-   private int id;  
-   private String name;
-   private String designation;  
-   private double salary;  
-   private String address;  
-      
-   public EmployeeRecord() {  
-            System.out.println("   Employee Records of Oracle Corporation ");  
-            System.out.println("---------------------------------------------");  
-            System.out.println("Eid" + "\t" + "Ename" + "\t" + "Edesignation" + "\t" + "Esalary" + "\t\t" + "Eaddress");  
-   }  
-  
-   public  EmployeeRecord(int id, String name, String designation, double salary, String address) {   
-        this();  
-        this.id = id;  
-        this.name = name;  
-        this.designation = designation;  
-        this.salary = salary;  
-        this.address = address;  
-    }  
-      
-    public void showRecord(){        
-        System.out.println(id + "\t" + name + "\t" + designation + "\t" + salary + "\t" + address);  
-    }  
-  
-    @Override  
-    public Prototype getClone() {  
-        return new EmployeeRecord(id, name, designation, salary, address);  
-    }  
+class Employee implements Prototype {  
+   private int id;
+    private String name;
+    private String designation;
+    private double salary;
+    private String address;
+
+    public Employee() {
+    }
+
+    public Employee(int id, String name, String designation, double salary, String address) {
+        this.id = id;
+        this.name = name;
+        this.designation = designation;
+        this.salary = salary;
+        this.address = address;
+    }
+
+    @Override
+    public Prototype getClone() {
+        return new Employee(this.id, this.name, this.designation, this.salary, this.address);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", designation='" + designation + '\'' +
+                ", salary=" + salary +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
 ```
 
-### PrototypeDemo.java
+### Main.java
 
 ```java
-class PrototypeDemo {  
-     public static void main(String[] args) throws IOException {  
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));  
-        System.out.print("Enter Employee Id: ");  
-        int id = Integer.parseInt(br.readLine());  
-        System.out.print("\n");  
-          
-        System.out.print("Enter Employee Name: ");  
-        String name = br.readLine();  
-        System.out.print("\n");  
-          
-        System.out.print("Enter Employee Designation: ");  
-        String designation = br.readLine();  
-        System.out.print("\n");  
-          
-        System.out.print("Enter Employee Address: ");  
-        String address = br.readLine();  
-        System.out.print("\n");  
-          
-        System.out.print("Enter Employee Salary: ");  
-        double salary = Double.parseDouble(br.readLine());  
-        System.out.print("\n");  
-           
-        EmployeeRecord employee = new EmployeeRecord(id, name, designation, salary, address);  
-        employee.showRecord();  
-        System.out.println("\n");  
-        EmployeeRecord clonedEmployee = (EmployeeRecord) employee.getClone();  
-        clonedEmployee.showRecord();  
-    }     
+public class Main {
+    public static void main(String[] args) {
+        Employee employee = new Employee(
+                1,
+                "Hakim",
+                "software engineer",
+                5000.0,
+                "R.Gaipov"
+        );
+
+        Prototype clonedEmployee = employee.getClone();
+
+        System.out.println(employee);
+        System.out.println(clonedEmployee);
+    }
 }
+```
+
+### Output:
+
+```
+Employee{id=1, name='Hakim', designation='software engineer', salary=5000.0, address='R.Gaipov'}
+Employee{id=1, name='Hakim', designation='software engineer', salary=5000.0, address='R.Gaipov'}
 ```
