@@ -85,7 +85,7 @@ public class ShapeFactory {
 
 ## Step 4: Use the Factory to get object of concrete class by passing an information such as type.
 
-### FactoryPatternDemo.java
+### Main.java
 
 ```java
 public class FactoryPatternDemo {
