@@ -25,7 +25,7 @@ public class Rectangle implements Shape {
 
    @Override
    public void draw() {
-      System.out.println("Inside Rectangle::draw() method.");
+      System.out.println("Rectangle");
    }
    
 }
@@ -38,7 +38,7 @@ public class Square implements Shape {
 
    @Override
    public void draw() {
-      System.out.println("Inside Square::draw() method.");
+      System.out.println("Square");
    }
    
 }
@@ -51,14 +51,13 @@ public class Circle implements Shape {
 
    @Override
    public void draw() {
-      System.out.println("Inside Circle::draw() method.");
+      System.out.println("Circle");
    }
    
 }
 ```
 
-## Step 3
-Create a Factory to generate object of concrete class based on given information.
+## Step 3: Create a Factory to generate object of concrete class based on given information.
 
 ### ShapeFactory.java
 
