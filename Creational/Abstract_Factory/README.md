@@ -24,7 +24,7 @@ public interface Shape {
 public class RoundedRectangle implements Shape {
    @Override
    public void draw() {
-      System.out.println("Inside RoundedRectangle::draw() method.");
+      System.out.println("RoundedRectangle");
    }
 }
 ```
@@ -35,7 +35,7 @@ public class RoundedRectangle implements Shape {
 public class RoundedSquare implements Shape {
    @Override
    public void draw() {
-      System.out.println("Inside RoundedSquare::draw() method.");
+      System.out.println("RoundedSquare");
    }
 }
 ```
@@ -46,7 +46,7 @@ public class RoundedSquare implements Shape {
 public class Rectangle implements Shape {
    @Override
    public void draw() {
-      System.out.println("Inside Rectangle::draw() method.");
+      System.out.println("Rectangle");
    }
 }
 ```
@@ -57,7 +57,7 @@ public class Rectangle implements Shape {
 public class Square implements Shape {
    @Override
    public void draw() {
-      System.out.println("Inside Square::draw() method.");
+      System.out.println("Square");
    }
 }
 ```
@@ -158,8 +158,8 @@ public class AbstractFactoryPatternDemo {
 ### Output:
 
 ```
-Inside Rectangle::draw() method.
-Inside Square::draw() method.
-Inside RoundedRectangle::draw() method.
-Inside RoundedSquare::draw() method.
+Rectangle
+Square
+RoundedRectangle
+RoundedSquare
 ```
