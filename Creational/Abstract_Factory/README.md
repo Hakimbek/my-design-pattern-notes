@@ -126,30 +126,38 @@ public class FactoryProducer {
 
 ## Step 6: Use the FactoryProducer to get AbstractFactory in order to get factories of concrete classes by passing an information such as type.
 
-### AbstractFactoryPatternDemo.java
+### Main.java
 
 ```java
 public class AbstractFactoryPatternDemo {
    public static void main(String[] args) {
       //get shape factory
       AbstractFactory shapeFactory = FactoryProducer.getFactory(false);
+      
       //get an object of Shape Rectangle
       Shape rectangle = shapeFactory.getShape("RECTANGLE");
+      
       //call draw method of Shape Rectangle
       rectangle.draw();
+      
       //get an object of Shape Square 
       Shape square = shapeFactory.getShape("SQUARE");
+      
       //call draw method of Shape Square
       square.draw();
       
       //get shape factory
       AbstractFactory roundedShapeFactory = FactoryProducer.getFactory(true);
+      
       //get an object of Shape Rectangle
       Shape roundedRectangle = roundedShapeFactory.getShape("RECTANGLE");
+      
       //call draw method of Shape Rectangle
       roundedRectangle.draw();
+      
       //get an object of Shape Square 
       Shape roundeedSquare = roundedShapeFactory.getShape("SQUARE");
+      
       //call draw method of Shape Square
       roundeedSquare.draw();
       
