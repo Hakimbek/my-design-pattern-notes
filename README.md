@@ -18,7 +18,7 @@ In core java, there are mainly three types of design patterns, which are further
 - [Factory Method](Creational/Factory)
 - [Abstract Factory](Creational/Abstract_Factory)
 - [Singleton](Creational/Singleton)
-- [Prototype](Creational/Prototype/README.md)
+- [Prototype](Creational/Prototype)
 - [Builder](Creational/Builder/README.md)
 ### 2. Structural Design Pattern
 - [Adapter](Structural/Adapter/README.md)
