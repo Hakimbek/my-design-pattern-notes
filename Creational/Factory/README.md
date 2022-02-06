@@ -5,7 +5,7 @@ The Factory Method Pattern is also known as **Virtual Constructor**.
 
 ## Example of Factory Method
 
-### Step 1: Create an interface.
+## Step 1: Create an interface.
 
 ### Shape.java
 
