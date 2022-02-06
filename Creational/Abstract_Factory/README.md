@@ -129,7 +129,7 @@ public class FactoryProducer {
 ### Main.java
 
 ```java
-public class AbstractFactoryPatternDemo {
+public class Main {
    public static void main(String[] args) {
       //get shape factory
       AbstractFactory shapeFactory = FactoryProducer.getFactory(false);
