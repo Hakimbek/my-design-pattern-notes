@@ -5,9 +5,7 @@ Design patterns are programming language independent strategies for solving the 
 
 By using the design patterns you can make your code more flexible, reusable and maintainable. It is the most important part because java internally follows design patterns.
 
-To become a professional software developer, you must know at least some popular solutions (i.e. design patterns) to the coding problems.
-
-# Categorization of design patterns:
+## Categorization of design patterns:
 Basically, design patterns are categorized into two parts:
 
 - Core Java (or JSE) Design Patterns.
