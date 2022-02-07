@@ -21,7 +21,7 @@ In core java, there are mainly three types of design patterns, which are further
 - [Prototype](Creational/Prototype)
 - [Builder](Creational/Builder)
 ### 2. Structural Design Pattern
-- [Adapter](Structural/Adapter/README.md)
+- [Adapter](Structural/Adapter)
 - [Bridge](Structural/Bridge/README.md)
 - [Composite](Structural/Composite/README.md)
 - [Decorator](Structural/Decorator/README.md)
