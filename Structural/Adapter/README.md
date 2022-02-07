@@ -7,88 +7,129 @@ The Adapter Pattern is also known as **Wrapper**.
 
 ## Example of Adapter Pattern
 
+## Step 1: Create interfaces for Media Player and Advanced Media Player.
 
-### Step 1
-Create bridge implementer interface.
+### MediaPlayer.java
 
-### DrawAPI.java
 ```java
-public interface DrawAPI {
-   public void drawCircle(int radius, int x, int y);
+public interface MediaPlayer {
+    void play(String audioType, String fileName);
 }
 ```
 
-### Step 2
-Create concrete bridge implementer classes implementing the DrawAPI interface.
+### AdvancedMediaPlayer.java
 
-### RedCircle.java
 ```java
-public class RedCircle implements DrawAPI {
-   @Override
-   public void drawCircle(int radius, int x, int y) {
-      System.out.println("Drawing Circle[ color: red, radius: " + radius + ", x: " + x + ", " + y + "]");
-   }
+public interface AdvancedMediaPlayer {
+    void playVlc(String fileName);
+    void playMp4(String fileName);
 }
 ```
 
-### GreenCircle.java
+## Step 2: Create concrete classes implementing the AdvancedMediaPlayer interface.
+
+### Mp4Player.java
+
 ```java
-public class GreenCircle implements DrawAPI {
-   @Override
-   public void drawCircle(int radius, int x, int y) {
-      System.out.println("Drawing Circle[ color: green, radius: " + radius + ", x: " + x + ", " + y + "]");
-   }
+public class Mp4Player implements AdvancedMediaPlayer {
+    @Override
+    public void playVlc(String fileName) {
+
+    }
+
+    @Override
+    public void playMp4(String fileName) {
+        System.out.println("Playing Mp4 file. Name - " + fileName);
+    }
 }
 ```
 
-### Step 3
-Create an abstract class Shape using the DrawAPI interface.
+### VlcPlayer.java
 
-### Shape.java
 ```java
-public abstract class Shape {
-   protected DrawAPI drawAPI;
-   
-   protected Shape(DrawAPI drawAPI) {
-      this.drawAPI = drawAPI;
-   }
-   public abstract void draw();	
+public class VlcPlayer implements AdvancedMediaPlayer {
+    @Override
+    public void playVlc(String fileName) {
+        System.out.println("Playing Vlc file. Name - " + fileName);
+    }
+
+    @Override
+    public void playMp4(String fileName) {
+
+    }
 }
 ```
 
-### Step 4
-Create concrete class implementing the Shape interface.
+## Step 3: Create adapter class implementing the MediaPlayer interface.
 
-### Circle.java
+### MediaAdapter.java
+
 ```java
-public class Circle extends Shape {
-   private int x, y, radius;
+public class MediaAdapter implements MediaPlayer {
+    AdvancedMediaPlayer advancedMediaPlayer;
 
-   public Circle(int x, int y, int radius, DrawAPI drawAPI) {
-      super(drawAPI);
-      this.x = x;  
-      this.y = y;  
-      this.radius = radius;
-   }
+    public MediaAdapter(String audioType) {
+        if (audioType.equalsIgnoreCase("vlc")) {
+            advancedMediaPlayer = new VlcPlayer();
+        } else if (audioType.equalsIgnoreCase("mp4")) {
+            advancedMediaPlayer = new Mp4Player();
+        }
+    }
 
-   public void draw() {
-      drawAPI.drawCircle(radius,x,y);
-   }
+    @Override
+    public void play(String audioType, String fileName) {
+        if (audioType.equalsIgnoreCase("vlc")) {
+            advancedMediaPlayer.playVlc(fileName);
+        } else if (audioType.equalsIgnoreCase("mp4")) {
+            advancedMediaPlayer.playMp4(fileName);
+        }
+    }
 }
 ```
 
-### Step 5
-Use the Shape and DrawAPI classes to draw different colored circles.
+## Step 4: Create concrete class implementing the MediaPlayer interface.
 
-### BridgePatternDemo.java
+### AudioPlayer.java
+
 ```java
-public class BridgePatternDemo {
-   public static void main(String[] args) {
-      Shape redCircle = new Circle(100, 100, 10, new RedCircle());
-      Shape greenCircle = new Circle(100, 100, 10, new GreenCircle());
+public class AudioPlayer implements MediaPlayer {
+    MediaAdapter mediaAdapter;
 
-      redCircle.draw();
-      greenCircle.draw();
-   }
+    @Override
+    public void play(String audioType, String fileName) {
+        if (audioType.equalsIgnoreCase("mp3")) {
+            System.out.println("Playing mp3 file. Name: " + fileName);
+        } else if (audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("mp4")) {
+            mediaAdapter = new MediaAdapter(audioType);
+            mediaAdapter.play(audioType, fileName);
+        } else {
+            System.out.println("Invalid media. " + audioType + " format not supported");
+        }
+    }
 }
+```
+
+## Step 5: Use the AudioPlayer to play different types of audio formats.
+
+### Main.java
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        AudioPlayer audioPlayer = new AudioPlayer();
+        audioPlayer.play("mp3", "Abc");
+        audioPlayer.play("mp4", "123");
+        audioPlayer.play("vlc", "smth");
+        audioPlayer.play("aaa", "bbb");
+    }
+}
+```
+
+### Output:
+
+```
+Playing mp3 file. Name: Abc
+Playing Mp4 file. Name - 123
+Playing Vlc file. Name - smth
+Invalid media. aaa format not supported
 ```
