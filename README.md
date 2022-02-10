@@ -29,7 +29,7 @@ In core java, there are mainly three types of design patterns, which are further
 - [Flyweight](Structural/Fly_Weight)
 - [Proxy](Structural/Proxy)
 ### 3. Behavioral Design Pattern
-- [Chain Of Responsibility](Behavioural/Chain_of_Resposibility)
+- [Chain Of Responsibility](Behavioural/Chain_of_Responsibility)
 - Command Pattern
 - Interpreter Pattern
 - Iterator Pattern
