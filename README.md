@@ -26,7 +26,7 @@ In core java, there are mainly three types of design patterns, which are further
 - [Composite](Structural/Composite)
 - [Decorator](Structural/Decorator)
 - [Facade](Structural/Facade)
-- [Flyweight](Structural/Fly_Weight/README.md)
+- [Flyweight](Structural/Fly_Weight)
 - [Proxy](Structural/Proxy)
 ### 3. Behavioral Design Pattern
 - Chain Of Responsibility Pattern
