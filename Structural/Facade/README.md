@@ -7,7 +7,7 @@ Practically, every Abstract Factory is a type of Facade.
 
 ## Example of Facade Pattern
 
-### Step 1: Create an interface.
+## Step 1: Create an interface.
 
 ### Shape.java
 
