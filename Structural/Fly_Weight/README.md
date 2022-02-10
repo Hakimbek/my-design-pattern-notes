@@ -98,3 +98,33 @@ public class Main {
     }
 }
 ```
+
+### Output:
+
+```
+Creating Black circle
+Circle: color - Black, x - 82, y - 57, radius - 100
+Circle: color - Black, x - 15, y - 54, radius - 100
+Circle: color - Black, x - 94, y - 0, radius - 100
+Circle: color - Black, x - 42, y - 12, radius - 100
+Creating Green circle
+Circle: color - Green, x - 15, y - 33, radius - 100
+Creating Blue circle
+Circle: color - Blue, x - 39, y - 87, radius - 100
+Circle: color - Green, x - 64, y - 34, radius - 100
+Circle: color - Black, x - 52, y - 54, radius - 100
+Circle: color - Blue, x - 49, y - 85, radius - 100
+Circle: color - Green, x - 27, y - 29, radius - 100
+Creating Red circle
+Circle: color - Red, x - 56, y - 30, radius - 100
+Circle: color - Blue, x - 50, y - 30, radius - 100
+Circle: color - Black, x - 3, y - 6, radius - 100
+Circle: color - Red, x - 93, y - 75, radius - 100
+Creating White circle
+Circle: color - White, x - 82, y - 40, radius - 100
+Circle: color - Red, x - 51, y - 25, radius - 100
+Circle: color - Black, x - 79, y - 70, radius - 100
+Circle: color - Red, x - 31, y - 13, radius - 100
+Circle: color - Blue, x - 72, y - 42, radius - 100
+Circle: color - White, x - 71, y - 38, radius - 100
+```
