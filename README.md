@@ -24,7 +24,7 @@ In core java, there are mainly three types of design patterns, which are further
 - [Adapter](Structural/Adapter)
 - [Bridge](Structural/Bridge)
 - [Composite](Structural/Composite)
-- [Decorator](Structural/Decorator/README.md)
+- [Decorator](Structural/Decorator)
 - [Facade](Structural/Facade/README.md)
 - [Flyweight](Structural/Fly_Weight/README.md)
 - [Proxy](Structural/Proxy/README.md)
